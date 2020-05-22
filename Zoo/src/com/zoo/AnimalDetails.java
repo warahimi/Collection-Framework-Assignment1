@@ -1,6 +1,7 @@
 package com.zoo;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class AnimalDetails {
@@ -37,43 +38,24 @@ public class AnimalDetails {
 
 
 		//Birst List
-		ArrayList<Birds> birdsList= new ArrayList<Birds>();
-		birdsList.add(b1);
-		birdsList.add(b2);
-		birdsList.add(b3);
-		birdsList.add(b4);
-		birdsList.add(b5);
+		List<Birds> bList = Arrays.asList(b1, b2,b3,b4,b5);
 		
 		//Mammals List
-		ArrayList<Mammals> mammalsList = new ArrayList<Mammals>();
-		mammalsList.add(m1);
-		mammalsList.add(m2);
-		mammalsList.add(m3);
-		mammalsList.add(m4);
-		mammalsList.add(m5);
+		List<Mammals> mList = Arrays.asList(m1, m2, m3,m4,m5);
 		
 		//Marine Animals List
-		ArrayList<MarinAnimals> maList = new ArrayList<MarinAnimals>();
-		maList.add(ma1);
-		maList.add(ma2);
-		maList.add(ma3);
-		maList.add(ma4);
-		maList.add(ma5);
+		List<MarinAnimals> maList = Arrays.asList(ma1,ma2,ma3,ma4,ma4);
 		
 		//Reptiles List
-		ArrayList<Reptiles> reptilesList = new ArrayList<Reptiles>();
-		reptilesList.add(r1);
-		reptilesList.add(r2);
-		reptilesList.add(r3);
-		reptilesList.add(r4);
-		reptilesList.add(r5);
+		 List<Reptiles> rList = Arrays.asList(r1,r2,r3,r4,r5);
 		
+		 
 		
-		ArrayList<Animals> zooAnimals = new ArrayList<Animals>();
-		zooAnimals.addAll(birdsList);
-		zooAnimals.addAll(mammalsList);
+		List<Animals> zooAnimals = new ArrayList<Animals>();
+		zooAnimals.addAll(bList);
+		zooAnimals.addAll(mList);
 		zooAnimals.addAll(maList);
-		zooAnimals.addAll(reptilesList);
+		zooAnimals.addAll(rList);
 		
 		//Printing Elements
 		for(Animals animals : zooAnimals)
